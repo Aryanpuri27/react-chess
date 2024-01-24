@@ -1,0 +1,126 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(147, 146, 146);
+  align-items: center;
+  overflow: hidden;
+  height: 10vh;
+}
+.oppdiv {
+  min-width: 30%;
+}
+.down {
+  display: flex;
+  height: 90vh;
+}
+.add-parent {
+  border-right: 2px solid rgb(117, 116, 116);
+  width: 33%;
+  margin: 0;
+  overflow-y: auto;
+  scrollbar-color: transparent transparent;
+}
+.add-parent::-webkit-scrollbar {
+  width: 0.1em; /* Set the width of the scrollbar to a very small value */
+}
+
+.add-parent::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scrollbar thumb to transparent */
+}
+.input-parent {
+  /* border-bottom: 2px solid black; */
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+input {
+  border: 2px solid black;
+  height: 80%;
+  width: 80%;
+  margin: 5px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.add-logo {
+  width: 30px;
+  height: 30px;
+}
+.friend-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  /* border-bottom: 2px solid black; */
+}
+
+.bg {
+  height: 90vh;
+  width: 67%;
+}
+
+.custom-search {
+  position: relative;
+  width: 80%;
+}
+input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 60px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.search-button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+.hr {
+  width: 95%;
+  border: 1px solid rgb(135, 132, 132);
+  margin: auto;
+}
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bg button {
+  /* background-color: #c49595; */
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px 1px #0077cc;
+}
+
+.bg button h1 {
+  font-size: 30px;
+  color: grey;
+}
+.side-btn-logo {
+  width: 100px;
+}
+.online {
+  filter: grayscale(100%);
+}

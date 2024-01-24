@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.link {
+  color: #2e63e8;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  /* border: 2px solid black; */
+  /* box-shadow: 0 0 2px black; */
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+}
+.formparent {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.formparent form img {
+  width: 50%;
+}
+.formparent form h1 {
+  padding: 10px;
+  padding-left: 18px;
+  font-size: 20px;
+}
+.formparent form span {
+  /* padding: 10px; */
+  padding-left: 18px;
+  font-size: 15px;
+}
+.namelabel {
+  /* padding: 10px; */
+  padding-left: 18px;
+  font-size: 15px;
+}
+
+.name {
+  /* padding: 10px; */
+  margin: 10px;
+  margin-left: 18px;
+  padding: 5px;
+  /* width: 80%; */
+  border: 1px solid rgb(59, 58, 58);
+  box-shadow: 0 0 2px gray;
+  border-radius: 5px;
+}
+
+.name:focus {
+  /* /* border: 3px solid #4f46e5; */
+  box-shadow: 0 0 4px #4f46e5;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.check-input {
+  border: 2px solid #2e63e8;
+  padding: 10px;
+  width: 15px;
+  margin: 3px;
+}
+
+.checkbox-container-label {
+  padding: 2px;
+}
+
+.btn {
+  background-color: #2e63e8;
+  padding: 8px;
+  /* width: 90%; */
+  margin-left: 18px;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.tile {
+  /* border: 1px solid black; */
+  width: 12.5%;
+  height: 100%;
+}
+.boardRow {
+  display: flex;
+  width: 100%;
+  height: 12.5%;
+}
+.whitetile {
+  background-color: #e8edf9;
+}
+.blacktile {
+  background-color: #b7c0d8;
+}
+
+.board {
+  aspect-ratio: 1;
+  width: 90%;
+  /* margin: auto; */
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 3px;
+}
+.boardParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-direction: row; */
+
+  height: 100vh;
+  width: max-content;
+  align-items: flex-start;
+}
+
+.openent-container {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11px;
+  /* width: 50%; */
+}
+.openent-logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.chatboxParent {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatbox {
+  background-color: #bdcbe6;
+  width: 90%;
+  height: 85vh;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+.msgcontainer {
+  height: 90%;
+  border-radius: 20px 20px 0px 0;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+}
+.msginputcontainer {
+  height: 10%;
+}
+.msginputcontainer input {
+  height: 100%;
+  width: 80%;
+  border-radius: 0 0 0 20px;
+  padding: 10px;
+}
+.msginputcontainer button {
+  height: 100%;
+  width: 20%;
+  border-radius: 0 0 20px 0;
+  background-color: #90a6df;
+}
+.gp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.me-msg-holder {
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 10px;
+
+  /* width: max-content; */
+  align-items: center;
+  margin: 3px;
+}
+.you-msg-holder {
+  display: flex;
+  height: 30px;
+  justify-content: flex-start;
+  padding: 10px;
+
+  align-items: center;
+  margin: 3px;
+}
+.msg {
+  background-color: #a1e1c1;
+  padding: 4px;
+  border-radius: 10px;
+}
+.piece {
+  padding: 3px;
+}
+
+.available {
+  /* border: 3px solid #00ff00; Green border color */
+  box-sizing: border-box;
+  background-color: #b1a7fc;
+  box-shadow: inset 0px 0px 2px #000b3f;
+}
+.openent {
+  display: flex;
+  width: 100%;
+}
+.outpieces {
+  display: flex;
+  max-width: 55%;
+  flex-wrap: wrap;
+
+  align-content: center;
+  margin-left: 10px;
+}
+.out {
+  /* aspect-ratio: 1 1; */
+  width: 2em;
+  height: 2em;
+}
+
+.bg-con {
+  background-image: url("../public/Desktopbg.png");
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+.bg-con1 {
+  background-color: #bdb0ff36;
+}
+.resign-btn {
+  /* padding: 10px; */
+  width: 100px;
+  border-radius: 10px;
+  background-color: #8787fbd4;
+  margin: 3px;
+}
+.b-down {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 767px) {
+  .authlogo {
+    display: none;
+  }
+  .formparent {
+    width: 100%;
+  }
+  form {
+    width: 90%;
+  }
+  .board {
+    margin: auto;
+  }
+  .cogp {
+    flex-direction: column-reverse;
+  }
+
+  .gp {
+    width: auto;
+  }
+}
